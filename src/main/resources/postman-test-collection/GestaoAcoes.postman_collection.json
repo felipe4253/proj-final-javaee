@@ -1,0 +1,42 @@
+{
+	"variables": [],
+	"info": {
+		"name": "GestaoAcoes",
+		"_postman_id": "d6202f55-b938-3f6f-22d1-5bfd0a72145d",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Criar Acao",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Comprar Acao",
+			"request": {
+				"url": "http://localhost:8080/v1/acao",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 10001,\n\t\"empresa\": {\n\t\t\"id\": 10001\n\t},\n\t\"investidorAtual\": {\n\t\t\"id\": 10001\n\t},\n\t\"valorInicial\": 1000,\n\t\"valorAtual\": 1000\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
